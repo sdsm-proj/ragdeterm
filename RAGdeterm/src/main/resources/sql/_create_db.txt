@@ -1,0 +1,23 @@
+CREATE USER ragdeterm WITH
+  LOGIN
+  SUPERUSER
+  INHERIT
+  CREATEDB
+  CREATEROLE
+  REPLICATION;
+
+ALTER USER ragdeterm WITH ENCRYPTED PASSWORD 'ragdeterm';
+
+CREATE DATABASE ragdeterm
+    WITH
+    OWNER = ragdeterm
+    ENCODING = 'UTF8'
+    TABLESPACE = pg_default
+    LC_COLLATE = 'Polish_Poland.1250'   -- use own language
+    LC_CTYPE = 'Polish_Poland.1250'     -- use own language
+    CONNECTION LIMIT = -1;
+
+CREATE SCHEMA rag
+  AUTHORIZATION ragdeterm;
+
+DROP SCHEMA public;

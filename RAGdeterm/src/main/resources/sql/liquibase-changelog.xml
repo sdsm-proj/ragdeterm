@@ -1,0 +1,138 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog logicalFilePath="liquibase-changelog.xml"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!-- ########################################################################################################### -->
+
+    <changeSet id="a90097be-5b04-4e29-a77e-904f3c63fe1b" author="ab">
+        <!-- pola systemowe -->
+        <createTable tableName="klazz">
+            <column name="id_auto" type="bigint" autoIncrement="true">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="id_uid" type="varchar(32)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+        </createTable>
+        <!-- pola biznesowe -->
+        <addColumn tableName="klazz">
+            <column name="jar_simple_name" type="varchar(2048)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pckg" type="varchar(2048)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="typex" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="simple_name" type="varchar(2048)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="full_canonical_name" type="varchar(2048)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="full_type_name" type="varchar(2048)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="sub_level" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="extend_simple_names" type="varchar(5000)" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+            <column name="extend_full_names" type="varchar(5000)" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+            <column name="extend_ids" type="varchar(5000)" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+            <column name="impl_simple_names" type="varchar(5000)" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+            <column name="impl_full_names" type="varchar(5000)" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+            <column name="impl_ids" type="varchar(5000)" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+            <column name="src_code" type="clob" defaultValue="">
+                <constraints nullable="true"/>
+            </column>
+
+        </addColumn>
+        <!-- index -->
+        <createIndex tableName="klazz" indexName="klazz__id_auto">
+            <column name="id_auto"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="1cfc7e4e-73fc-47c3-b9d0-e7ea1fe12f40" author="ab">
+        <!-- pola systemowe -->
+        <createTable tableName="klazz_extend">
+            <column name="id_auto" type="bigint" autoIncrement="true">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="id_uid" type="varchar(32)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+        </createTable>
+        <!-- pola biznesowe -->
+        <addColumn tableName="klazz_extend">
+            <column name="rel_type" type="varchar(32)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="id_from" type="varchar(32)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="simple_name_from" type="varchar(2048)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="id_to" type="varchar(32)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="simple_name_to" type="varchar(2048)">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+        <!-- index -->
+        <createIndex tableName="klazz_extend" indexName="klazz_extend__id_auto">
+            <column name="id_auto"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="db077b73-671f-4889-90b2-1eaabb9649fc" author="ab">
+        <!-- pola systemowe -->
+        <createTable tableName="klazz_field">
+            <column name="id_auto" type="bigint" autoIncrement="true">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="id_uid" type="varchar(32)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+        </createTable>
+        <!-- pola biznesowe -->
+        <addColumn tableName="klazz_field">
+            <column name="id_klazz" type="varchar(32)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="klazz_simple_name" type="varchar(2048)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="id_klazz_field" type="varchar(32)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="klazz_field_simple_name" type="varchar(2048)">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+        <!-- index -->
+        <createIndex tableName="klazz_field" indexName="klazz_field__id_auto">
+            <column name="id_auto"/>
+        </createIndex>
+    </changeSet>
+
+
+
+</databaseChangeLog>

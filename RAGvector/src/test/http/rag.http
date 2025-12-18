@@ -1,0 +1,15 @@
+###
+http://localhost:8883/ping
+
+###
+http://localhost:8883/rag?query=Provide a list of all classes that constitute the context of the class
+    "pl.org.opi.vehicles.land.car.subtypes.Hatchback".
+    By context, we mean: (
+    A. A list of all base classes;
+    B. Fields of the specified class and fields of base classes;
+    C. Classes that are types of object fields of all listed classes;).
+    Do not include classes from the Java standard library.
+    The answer should be the source code of classes found. Do not add comments.
+
+###
+http://localhost:8883/rag?query=Provide a list of classes (not interfaces) that implement (directly or indirectly) the TheSameLetters interface. Return only class names.

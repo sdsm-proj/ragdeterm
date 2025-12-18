@@ -1,0 +1,21 @@
+
+
+###
+http://localhost:8884/rag?query=For the following set of classes in Java
+    ```java
+    [*RG ClassContext("pl.org.opi.vehicles.land.car.subtypes.Hatchback",
+    LONG_NAME, "\n", "\n", "\n") *RG]
+    ```java
+    create the corresponding structures in GraphQL.
+    Use GraphQL structures of type: (interface, type, input).
+
+
+
+
+
+
+###
+
+http://localhost:8884/ping
+
+
