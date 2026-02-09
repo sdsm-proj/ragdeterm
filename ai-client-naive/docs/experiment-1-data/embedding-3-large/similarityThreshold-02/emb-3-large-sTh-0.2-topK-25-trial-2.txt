@@ -1,0 +1,163 @@
+Prompt{messages=[UserMessage{content='Provide a list of classes (not interfaces) that implement (directly or indirectly)
+the TheSameLetters interface. Return only class names.
+
+Context information is below, surrounded by ---------------------
+
+---------------------
+package pl.org.opi.hierarchy;
+
+public interface TheSameLetters {
+}
+package pl.org.opi.hierarchy;
+
+public interface Transitive1 extends TheSameLetters {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLs extends BaseClassL {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+import pl.org.opi.hierarchy.Transitive2;
+
+public class SubClassLl extends BaseClassL implements Transitive2 {
+}
+package pl.org.opi.hierarchy.s;
+
+import pl.org.opi.hierarchy.BaseClassS;
+import pl.org.opi.hierarchy.Transitive2;
+
+public class SubClassSs extends BaseClassS implements Transitive2 {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLe extends BaseClassL {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLm extends BaseClassL {
+}
+package pl.org.opi.hierarchy.i;
+
+import pl.org.opi.hierarchy.BaseClassI;
+
+public class SubClassIt extends BaseClassI {
+}
+package pl.org.opi.hierarchy.t;
+
+import pl.org.opi.hierarchy.BaseClassT;
+import pl.org.opi.hierarchy.Transitive2;
+
+public class SubClassTt extends BaseClassT implements Transitive2 {
+}
+package pl.org.opi.hierarchy.q;
+
+import pl.org.opi.hierarchy.BaseClassQ;
+
+public class SubClassQs extends BaseClassQ {
+}
+package pl.org.opi.hierarchy.q;
+
+import pl.org.opi.hierarchy.BaseClassQ;
+import pl.org.opi.hierarchy.Transitive2;
+
+public class SubClassQq extends BaseClassQ implements Transitive2 {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLt extends BaseClassL {
+}
+package pl.org.opi.hierarchy.v;
+
+import pl.org.opi.hierarchy.BaseClassV;
+
+public class SubClassVs extends BaseClassV {
+}
+package pl.org.opi.hierarchy.i;
+
+import pl.org.opi.hierarchy.BaseClassI;
+
+public class SubClassIs extends BaseClassI {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLr extends BaseClassL {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLc extends BaseClassL {
+}
+package pl.org.opi.hierarchy.i;
+
+import pl.org.opi.hierarchy.BaseClassI;
+
+public class SubClassIe extends BaseClassI {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLi extends BaseClassL {
+}
+package pl.org.opi.hierarchy.k;
+
+import pl.org.opi.hierarchy.BaseClassK;
+import pl.org.opi.hierarchy.Transitive2;
+
+public class SubClassKk extends BaseClassK implements Transitive2 {
+}
+package pl.org.opi.hierarchy.z;
+
+import pl.org.opi.hierarchy.BaseClassZ;
+
+public class SubClassZs extends BaseClassZ {
+}
+package pl.org.opi.hierarchy.i;
+
+import pl.org.opi.hierarchy.BaseClassI;
+
+public class SubClassIy extends BaseClassI {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLk extends BaseClassL {
+}
+package pl.org.opi.hierarchy.t;
+
+import pl.org.opi.hierarchy.BaseClassT;
+
+public class SubClassTs extends BaseClassT {
+}
+package pl.org.opi.hierarchy.i;
+
+import pl.org.opi.hierarchy.BaseClassI;
+
+public class SubClassIm extends BaseClassI {
+}
+package pl.org.opi.hierarchy.i;
+
+import pl.org.opi.hierarchy.BaseClassI;
+
+public class SubClassIl extends BaseClassI {
+}
+---------------------
+
+Given the context and provided history information and not prior knowledge,
+reply to the user comment. If the answer is not in the context, inform
+the user that you can't answer the question.
+', metadata={messageType=USER}, messageType=USER}], modelOptions=OpenAiChatOptions: {"streamUsage":false,"model":"gpt-4o-mini-2024-07-18","temperature":0.1}}

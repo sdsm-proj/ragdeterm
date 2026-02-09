@@ -1,0 +1,25 @@
+Prompt{messages=[UserMessage{content='You are given the fully qualified Java class name:
+"pl.org.opi.vehicle.land.car.subtypes.Hatchback"
+Your task is to identify and output the complete context of this class.
+The context MUST include:
+1. All direct and indirect superclass(es) of the given class.
+2. All non-primitive, non-Java-standard-library classes used as types of the fields listed above
+(including field types declared in superclasses).
+Constraints:
+- Exclude any classes from the Java standard library (e.g., java.*, javax.*).
+- Assume standard Java inheritance and field visibility rules.
+Output requirements:
+- Output ONLY the Java source code of all identified classes.
+- Do NOT add comments, explanations, headings, or extra text.
+- Each class must be complete and syntactically correct.
+- Preserve correct package declarations.
+
+Context information is below, surrounded by ---------------------
+
+---------------------
+---------------------
+
+Given the context and provided history information and not prior knowledge,
+reply to the user comment. If the answer is not in the context, inform
+the user that you can't answer the question.
+', metadata={messageType=USER}, messageType=USER}], modelOptions=OpenAiChatOptions: {"streamUsage":false,"model":"gpt-4o-mini-2024-07-18","temperature":0.1}}

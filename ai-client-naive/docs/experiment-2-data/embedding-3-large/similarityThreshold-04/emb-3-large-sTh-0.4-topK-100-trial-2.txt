@@ -1,0 +1,637 @@
+Prompt{messages=[UserMessage{content='You are given the fully qualified Java class name:
+"pl.org.opi.vehicle.land.car.subtypes.Hatchback"
+Your task is to identify and output the complete context of this class.
+The context MUST include:
+1. All direct and indirect superclass(es) of the given class.
+2. All non-primitive, non-Java-standard-library classes used as types of the fields listed above
+(including field types declared in superclasses).
+Constraints:
+- Exclude any classes from the Java standard library (e.g., java.*, javax.*).
+- Assume standard Java inheritance and field visibility rules.
+Output requirements:
+- Output ONLY the Java source code of all identified classes.
+- Do NOT add comments, explanations, headings, or extra text.
+- Each class must be complete and syntactically correct.
+- Preserve correct package declarations.
+
+Context information is below, surrounded by ---------------------
+
+---------------------
+package pl.org.opi.vehicle.land.car.subtypes;
+
+import pl.org.opi.vehicle.land.car.Car;
+
+public class Hatchback extends Car {
+}
+package pl.org.opi.vehicle.land.car;
+
+import pl.org.opi.vehicle.LandVehicle;
+import pl.org.opi.vehicle.component.level2.*;
+import pl.org.opi.vehicle.utility.*;
+
+public abstract class Car extends LandVehicle {
+    private EngineSystem engineSystem;
+    private TransmissionSystem transmissionSystem;
+    private ElectricalSystem electricalSystem;
+    private SuspensionSystem suspensionSystem;
+    private BodyStructure bodyStructure;
+    private InteriorSystem interiorSystem;
+    private Tire[] tires;
+    private FuelType fuelType;
+    private NavigationSystem navigationSystem;
+    private SafetySystem safetySystem;
+    private AirCondition airCondition;
+    private InfotainmentSystem infotainmentSystem;
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHs extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHy extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHi extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHa extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHc extends BaseClassH {
+}
+package pl.org.opi.vehicle.land.car.subtypes;
+
+import pl.org.opi.vehicle.land.car.Car;
+
+public class Sedan extends Car {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+import pl.org.opi.hierarchy.Transitive2;
+
+public class SubClassHh extends BaseClassH implements Transitive2 {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHb extends BaseClassH {
+}
+package pl.org.opi.vehicle;
+
+public abstract class Vehicle {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHv extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHk extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHl extends BaseClassH {
+}
+package pl.org.opi.vehicle.land.car.subtypes;
+
+import pl.org.opi.vehicle.land.car.Car;
+
+public class Coupe extends Car {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHd extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHz extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHn extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHt extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHx extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHp extends BaseClassH {
+}
+package pl.org.opi.hierarchy;
+
+public class BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHj extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHq extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHf extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHo extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHu extends BaseClassH {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLh extends BaseClassL {
+}
+package pl.org.opi.hierarchy.j;
+
+import pl.org.opi.hierarchy.BaseClassJ;
+
+public class SubClassJh extends BaseClassJ {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHw extends BaseClassH {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHr extends BaseClassH {
+}
+package pl.org.opi.hierarchy.f;
+
+import pl.org.opi.hierarchy.BaseClassF;
+
+public class SubClassFh extends BaseClassF {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOv extends BaseClassO {
+}
+package pl.org.opi.hierarchy.u;
+
+import pl.org.opi.hierarchy.BaseClassU;
+
+public class SubClassUp extends BaseClassU {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHe extends BaseClassH {
+}
+package pl.org.opi.hierarchy.v;
+
+import pl.org.opi.hierarchy.BaseClassV;
+
+public class SubClassVh extends BaseClassV {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHg extends BaseClassH {
+}
+package pl.org.opi.hierarchy.x;
+
+import pl.org.opi.hierarchy.BaseClassX;
+
+public class SubClassXh extends BaseClassX {
+}
+package pl.org.opi.hierarchy.b;
+
+import pl.org.opi.hierarchy.BaseClassB;
+
+public class SubClassBh extends BaseClassB {
+}
+package pl.org.opi.hierarchy.y;
+
+import pl.org.opi.hierarchy.BaseClassY;
+
+public class SubClassYh extends BaseClassY {
+}
+package pl.org.opi.vehicle.land.car.subtypes;
+
+import pl.org.opi.vehicle.land.car.Car;
+
+public class Crossover extends Car {
+}
+package pl.org.opi.hierarchy.i;
+
+import pl.org.opi.hierarchy.BaseClassI;
+
+public class SubClassIh extends BaseClassI {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOf extends BaseClassO {
+}
+package pl.org.opi.hierarchy.p;
+
+import pl.org.opi.hierarchy.BaseClassP;
+
+public class SubClassPl extends BaseClassP {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOc extends BaseClassO {
+}
+package pl.org.opi.hierarchy.q;
+
+import pl.org.opi.hierarchy.BaseClassQ;
+
+public class SubClassQh extends BaseClassQ {
+}
+package pl.org.opi.hierarchy.p;
+
+import pl.org.opi.hierarchy.BaseClassP;
+
+public class SubClassPk extends BaseClassP {
+}
+package pl.org.opi.hierarchy.u;
+
+import pl.org.opi.hierarchy.BaseClassU;
+
+public class SubClassUh extends BaseClassU {
+}
+package pl.org.opi.hierarchy.s;
+
+import pl.org.opi.hierarchy.BaseClassS;
+import pl.org.opi.hierarchy.Transitive2;
+
+public class SubClassSs extends BaseClassS implements Transitive2 {
+}
+package pl.org.opi.hierarchy.p;
+
+import pl.org.opi.hierarchy.BaseClassP;
+
+public class SubClassPh extends BaseClassP {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOy extends BaseClassO {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLa extends BaseClassL {
+}
+package pl.org.opi.hierarchy.p;
+
+import pl.org.opi.hierarchy.BaseClassP;
+
+public class SubClassPa extends BaseClassP {
+}
+package pl.org.opi.hierarchy.h;
+
+import pl.org.opi.hierarchy.BaseClassH;
+
+public class SubClassHm extends BaseClassH {
+}
+package pl.org.opi.hierarchy.s;
+
+import pl.org.opi.hierarchy.BaseClassS;
+
+public class SubClassSu extends BaseClassS {
+}
+package pl.org.opi.hierarchy.b;
+
+import pl.org.opi.hierarchy.BaseClassB;
+
+public class SubClassBk extends BaseClassB {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOa extends BaseClassO {
+}
+package pl.org.opi.hierarchy.t;
+
+import pl.org.opi.hierarchy.BaseClassT;
+
+public class SubClassTh extends BaseClassT {
+}
+package pl.org.opi.hierarchy.t;
+
+import pl.org.opi.hierarchy.BaseClassT;
+
+public class SubClassTs extends BaseClassT {
+}
+package pl.org.opi.hierarchy.s;
+
+import pl.org.opi.hierarchy.BaseClassS;
+
+public class SubClassSh extends BaseClassS {
+}
+package pl.org.opi.hierarchy.p;
+
+import pl.org.opi.hierarchy.BaseClassP;
+
+public class SubClassPb extends BaseClassP {
+}
+package pl.org.opi.hierarchy.t;
+
+import pl.org.opi.hierarchy.BaseClassT;
+
+public class SubClassTa extends BaseClassT {
+}
+package pl.org.opi.hierarchy.s;
+
+import pl.org.opi.hierarchy.BaseClassS;
+
+public class SubClassSa extends BaseClassS {
+}
+package pl.org.opi.hierarchy.u;
+
+import pl.org.opi.hierarchy.BaseClassU;
+
+public class SubClassUt extends BaseClassU {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOb extends BaseClassO {
+}
+package pl.org.opi.hierarchy.g;
+
+import pl.org.opi.hierarchy.BaseClassG;
+
+public class SubClassGh extends BaseClassG {
+}
+package pl.org.opi.hierarchy.s;
+
+import pl.org.opi.hierarchy.BaseClassS;
+
+public class SubClassSk extends BaseClassS {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLp extends BaseClassL {
+}
+package pl.org.opi.hierarchy.j;
+
+import pl.org.opi.hierarchy.BaseClassJ;
+
+public class SubClassJb extends BaseClassJ {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOt extends BaseClassO {
+}
+package pl.org.opi.hierarchy.i;
+
+import pl.org.opi.hierarchy.BaseClassI;
+
+public class SubClassIn extends BaseClassI {
+}
+package pl.org.opi.hierarchy.n;
+
+import pl.org.opi.hierarchy.BaseClassN;
+
+public class SubClassNh extends BaseClassN {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOh extends BaseClassO {
+}
+package pl.org.opi.hierarchy.c;
+
+import pl.org.opi.hierarchy.BaseClassC;
+
+public class SubClassCb extends BaseClassC {
+}
+package pl.org.opi.hierarchy.t;
+
+import pl.org.opi.hierarchy.BaseClassT;
+
+public class SubClassTp extends BaseClassT {
+}
+package pl.org.opi.hierarchy.v;
+
+import pl.org.opi.hierarchy.BaseClassV;
+
+public class SubClassVw extends BaseClassV {
+}
+package pl.org.opi.hierarchy.l;
+
+import pl.org.opi.hierarchy.BaseClassL;
+
+public class SubClassLb extends BaseClassL {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOg extends BaseClassO {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOk extends BaseClassO {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOz extends BaseClassO {
+}
+package pl.org.opi.hierarchy.u;
+
+import pl.org.opi.hierarchy.BaseClassU;
+
+public class SubClassUb extends BaseClassU {
+}
+package pl.org.opi.hierarchy.a;
+
+import pl.org.opi.hierarchy.BaseClassA;
+
+public class SubClassAu extends BaseClassA {
+}
+package pl.org.opi.hierarchy.p;
+
+import pl.org.opi.hierarchy.BaseClassP;
+
+public class SubClassPu extends BaseClassP {
+}
+package pl.org.opi.hierarchy.u;
+
+import pl.org.opi.hierarchy.BaseClassU;
+
+public class SubClassUs extends BaseClassU {
+}
+package pl.org.opi.hierarchy.r;
+
+import pl.org.opi.hierarchy.BaseClassR;
+
+public class SubClassRh extends BaseClassR {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOe extends BaseClassO {
+}
+package pl.org.opi.hierarchy.p;
+
+import pl.org.opi.hierarchy.BaseClassP;
+import pl.org.opi.hierarchy.Transitive2;
+
+public class SubClassPp extends BaseClassP implements Transitive2 {
+}
+package pl.org.opi.hierarchy.s;
+
+import pl.org.opi.hierarchy.BaseClassS;
+
+public class SubClassSb extends BaseClassS {
+}
+package pl.org.opi.hierarchy.t;
+
+import pl.org.opi.hierarchy.BaseClassT;
+
+public class SubClassTc extends BaseClassT {
+}
+package pl.org.opi.hierarchy.a;
+
+import pl.org.opi.hierarchy.BaseClassA;
+
+public class SubClassAh extends BaseClassA {
+}
+package pl.org.opi.hierarchy.r;
+
+import pl.org.opi.hierarchy.BaseClassR;
+
+public class SubClassRv extends BaseClassR {
+}
+package pl.org.opi.hierarchy.t;
+
+import pl.org.opi.hierarchy.BaseClassT;
+
+public class SubClassTk extends BaseClassT {
+}
+package pl.org.opi.hierarchy.s;
+
+import pl.org.opi.hierarchy.BaseClassS;
+
+public class SubClassSy extends BaseClassS {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOn extends BaseClassO {
+}
+package pl.org.opi.hierarchy.c;
+
+import pl.org.opi.hierarchy.BaseClassC;
+
+public class SubClassCh extends BaseClassC {
+}
+package pl.org.opi.hierarchy.a;
+
+import pl.org.opi.hierarchy.BaseClassA;
+
+public class SubClassAp extends BaseClassA {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOj extends BaseClassO {
+}
+package pl.org.opi.hierarchy.t;
+
+import pl.org.opi.hierarchy.BaseClassT;
+
+public class SubClassTb extends BaseClassT {
+}
+package pl.org.opi.hierarchy.o;
+
+import pl.org.opi.hierarchy.BaseClassO;
+
+public class SubClassOx extends BaseClassO {
+}
+package pl.org.opi.hierarchy.b;
+
+import pl.org.opi.hierarchy.BaseClassB;
+
+public class SubClassBy extends BaseClassB {
+}
+---------------------
+
+Given the context and provided history information and not prior knowledge,
+reply to the user comment. If the answer is not in the context, inform
+the user that you can't answer the question.
+', metadata={messageType=USER}, messageType=USER}], modelOptions=OpenAiChatOptions: {"streamUsage":false,"model":"gpt-4o-mini-2024-07-18","temperature":0.1}}

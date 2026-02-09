@@ -1,0 +1,36 @@
+###
+http://localhost:8883/ping
+
+###
+http://localhost:8883/rag?query=
+    Provide a list of all classes that constitute the context of the class%0A
+    "pl.org.opi.vehicle.land.car.subtypes.Hatchback".%0A
+    By context, we mean: (%0A
+    A. A list of all base classes;%0A
+    B. Fields of the specified class and fields of base classes;%0A
+    C. Classes that are types of object fields of all listed classes;).%0A
+    Do not include classes from the Java standard library.%0A
+    The answer should be the source code of classes found. Do not add comments.
+
+###
+http://localhost:8883/rag?query=
+    Provide a list of classes (not interfaces) that implement (directly or indirectly)%0A
+    the TheSameLetters interface. Return only class names.
+
+###
+http://localhost:8883/rag?query=
+    You are given the fully qualified Java class name:%0A
+    "pl.org.opi.vehicle.land.car.subtypes.Hatchback"%0A
+    Your task is to identify and output the complete context of this class.%0A
+    The context MUST include:%0A
+    1. All direct and indirect superclass(es) of the given class.%0A
+    2. All non-primitive, non-Java-standard-library classes used as types of the fields listed above%0A
+   (including field types declared in superclasses).%0A
+    Constraints:%0A
+    - Exclude any classes from the Java standard library (e.g., java.*, javax.*).%0A
+    - Assume standard Java inheritance and field visibility rules.%0A
+    Output requirements:%0A
+    - Output ONLY the Java source code of all identified classes.%0A
+    - Do NOT add comments, explanations, headings, or extra text.%0A
+    - Each class must be complete and syntactically correct.%0A
+    - Preserve correct package declarations.
