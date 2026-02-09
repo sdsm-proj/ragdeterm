@@ -25,7 +25,6 @@ public class EnricherTest {
         enricher.setConnPsw(CONN_PSW);
         enricher.setConnDriver(CONN_DRIVER);
         String rslt = enricher.exec(prompt);
-        System.out.println(rslt);
         log.info(rslt);
     }
 
