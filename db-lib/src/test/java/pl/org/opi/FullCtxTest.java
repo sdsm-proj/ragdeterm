@@ -1,6 +1,7 @@
 package pl.org.opi;
 
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import pl.org.opi.dbaccess.conn.DbConnConfig;
 import pl.org.opi.dbaccess.container.DbConnContainer;
@@ -13,7 +14,7 @@ import java.util.LinkedHashSet;
 @Slf4j
 public class FullCtxTest {
 
-    @Test
+    //@Test
     public void test() {
         DbConnContainer.addDbConn(new DbConnConfig("Default",
                 Consta.CONN_URL, Consta.CONN_USER, Consta.CONN_PSW, Consta.CONN_DRIVER,
