@@ -66,3 +66,7 @@ It is worth noting that after loading the JDK, the number of records in individu
 | cooperation |            58,223 |
 
 In the case of the JDK, loading time is longer, especially when relationship resolution is enabled. The most time-consuming scenario is updating loaded information in the variant with deletion rather than overwriting. The recommended strategy is to load each JDK version once and not update it during the course of the project.
+
+---
+
+_All tests were performed on a computer with an AMD Ryzen 5, 3.2GHz processor, Samsung 980 SSD, and 32 GB of RAM._

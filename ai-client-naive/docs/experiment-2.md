@@ -105,3 +105,7 @@ The results show that traditional RAG is not able to capture semantic relationsh
 In none of the cases did the enriched prompt contain all 21 required types. The best result was 20 types, obtained at the maximum `topK`. Achieving this result is associated with very low precision (`0.03`) and very high informational noise (`0.97`). Thus, prompt enrichment for `similarityThreshold = 0.0, 0.2` and `topK = 1000` effectively resembles a brute-force operation.
 
 The responses obtained for other parameter combinations are unsatisfactory.
+
+---
+
+_All tests were performed on a computer with an AMD Ryzen 5, 3.2GHz processor, Samsung 980 SSD, and 32 GB of RAM._

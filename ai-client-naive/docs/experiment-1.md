@@ -115,3 +115,7 @@ The only case in which all 26 expected classes were retrieved occurs at a very h
 The responses obtained for other parameter combinations are unsatisfactory, with the possible exception of `topK = 100` when using `embedding-3-large`.
 
 It is also worth noting the better performance of `embedding-3-large` compared to `embedding-3-small`.
+
+---
+
+_All tests were performed on a computer with an AMD Ryzen 5, 3.2GHz processor, Samsung 980 SSD, and 32 GB of RAM._

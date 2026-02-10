@@ -87,3 +87,7 @@ In the conducted experiments, the shortest prompt enrichment time was **1.46 ms*
 This occurred when the **RAGdeterm** database was populated with data about classes and relationships from all projects
 as well as the JDK (nearly **26,000 classes** in total). Even the highest reported values are fully acceptable.
 It is also evident that retrieving the full source code does not affect performance.
+
+---
+
+_All tests were performed on a computer with an AMD Ryzen 5, 3.2GHz processor, Samsung 980 SSD, and 32 GB of RAM._
