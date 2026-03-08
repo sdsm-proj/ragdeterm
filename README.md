@@ -13,3 +13,7 @@ Their documentation can be found below:
 [loader-java](loader-java/README.md)
 
 [prompt-enricher](prompt-enricher/README.md)
+
+[agentic-llm](agentic-llm/README.md)
+
+[agentic-ast](agentic-ast/README.md)

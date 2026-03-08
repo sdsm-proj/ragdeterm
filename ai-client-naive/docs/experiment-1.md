@@ -93,11 +93,8 @@ The average was calculated from the three trials.
 
 ## Metrics
 
-Three metrics were used in the experiment:\
-**M1** – the ratio of the number of correctly retrieved classes to the number of expected classes
-(in this experiment, 26 classes, from `SubClassAa` to `SubClassZz`, were expected).\
-**M2** – the ratio of the number of correctly retrieved classes to all classes used to enrich the prompt.\
-**M3** – the ratio of incorrectly added classes to all added classes — informational noise.
+The metrics used to evaluate the experimental results are:
+**precision**, **recall**, and **F1 score**.
 
 ## Results
 

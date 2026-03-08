@@ -1,10 +1,54 @@
 
+###
+http://localhost:8886/ragdeterm?query=
+    For the following set of types in Java%0A
+    ```java%0A
+    [*RG StructureContext("pl.org.opi.vehicle.land.car.subtypes.Hatchback",%0A
+    "", SOURCE_CODE, "\n", "\n", "\n") *RG]%0A
+    ```java%0A
+    create their equivalents in Typescript.
 
 ###
 http://localhost:8886/ragdeterm?query=
-    For the following set of types in Java
-    ```java
-    [*RG StructureContext("pl.org.opi.vehicle.land.car.subtypes.Hatchback",
-    "", SOURCE_CODE, "\n", "\n", "\n") *RG]
-    ```java
-    create their equivalents in Typescript.
+    For each of the classes listed below (classes, not enums),%0A
+    create its counterpart: a class with the suffix 'Dto' in its name.%0A
+    ```java%0A
+    [*RG StruCoopContext("pl.org.opi.person.PersonSection", "",
+    SOURCE_CODE, "\n---\n", "\n---\n", "\n---\n") *RG]%0A
+    ```java%0A
+    For the generated classes with the 'Dto' suffix,%0A
+    create GraphQL structures: type and input.%0A
+    Also create the required GraphQL structures for enums.%0A
+    Do not create GraphQL structures for classes without the 'Dto' suffix.%0A
+    Convert all unknown scalar types in GraphQL to the 'String' type.%0A
+
+###
+http://localhost:8886/ragdeterm?query=
+    In the following code, indicate all classes, fields, and methods%0A
+    that have not been documented:%0A
+    ```java%0A
+    [*RG StruCoopContext("pl.org.opi.vehicle.land.car.subtypes.Hatchback",
+    "", SOURCE_CODE, "\n----------\n", "\n----------\n", "\n-----\n") *RG]%0A
+    ```java%0A
+
+###
+http://localhost:8886/ragdeterm?query=
+    Present in a clear manner what has changed in the contents%0A
+    of the ‘java.lang.foreign’ package%0A
+    between Java versions 21 and 25. %0A
+    Here is a list of classes in version 21:%0A
+    (%0A
+    [*RG SelectedJarPackageTypesAnyLevel("JDK_Eclipse Adoptium_21.0.4+7-LTS",
+    "java.lang.foreign", LONG_NAME, "", "", ", ") *RG]%0A
+    )%0A
+    and here is version 25:
+    (%0A
+    [*RG SelectedJarPackageTypesAnyLevel("JDK_Eclipse Adoptium_25.0.1+8-LTS",
+    "java.lang.foreign", LONG_NAME, "", "", ", ") *RG]%0A
+    )%0A
+
+###
+http://localhost:8886/ragdeterm?query=
+    [*RG StruCoopContext("pl.org.opi.depend.KlazzDepend",
+    "depend-c-lib-1.0.0", LONG_NAME,
+    "\n----------\n", "\n----------\n", "\n-----\n") *RG]%0A
