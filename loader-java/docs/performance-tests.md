@@ -32,16 +32,16 @@ The results are as follows:
 | ------------- | :----------: | -----------------: | -----------------: | -----------------: |
 | hierarchy-lib |     false    |               1712 |               1782 |               1840 |
 | hierarchy-lib |     true     |               1685 |               1650 |               1717 |
-| person-lib    |     false    |                629 |                608 |                676 |
-| person-lib    |     true     |                611 |                627 |                585 |
-| vehicle-lib   |     false    |                775 |                688 |                642 |
-| vehicle-lib   |     true     |                690 |                676 |                714 |
-| person-lib    |     false    |                600 |                620 |                657 |
-| person-lib    |     true     |                573 |                551 |                592 |
-| person-lib    |     false    |                643 |                565 |                586 |
-| person-lib    |     true     |                575 |                616 |                582 |
-| person-lib    |     false    |                583 |                614 |                662 |
-| person-lib    |     true     |                642 |                651 |                572 |
+| vehicle-lib    |     false    |                629 |                608 |                676 |
+| vehicle-lib    |     true     |                611 |                627 |                585 |
+| person-lib   |     false    |                775 |                688 |                642 |
+| person-lib   |     true     |                690 |                676 |                714 |
+| depend-a-lib    |     false    |                600 |                620 |                657 |
+| depend-a-lib    |     true     |                573 |                551 |                592 |
+| depend-b-lib    |     false    |                643 |                565 |                586 |
+| depend-b-lib    |     true     |                575 |                616 |                582 |
+| depend-c-lib    |     false    |                583 |                614 |                662 |
+| depend-c-lib    |     true     |                642 |                651 |                572 |
 
 The conclusions are that for small projects, `deleteBefore` does not affect loading speed (therefore, it is better to use `false` to avoid losing existing relationships). The loading time itself is short enough that it is worth running the process after every commit.
 
